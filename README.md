@@ -36,7 +36,7 @@ Here's take a quick look:
 ## LIVE DEMO 🌐
 
 Here's test yourself via live demo:
-- [Click here to test yourself by generating otp]()
+- [Click here to test yourself by generating otp]( https://amnaakhtar1213.github.io/OTP-generator/)
 
 ----------------------------
 
