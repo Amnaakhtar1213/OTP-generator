@@ -18,17 +18,18 @@ h1{
     font-size: 3rem;
 } */
 
-
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical center */
-  align-items: center;     /* horizontal center */
-  height: 100vh;           /* full viewport height */
+  justify-content: center;   /* vertical center */
+  align-items: center;       /* horizontal center */
+  min-height: 100vh;         /* flexible full height */
   text-align: center;
   padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Titles and text */
 .otp-title {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -46,6 +47,7 @@ h1{
   color: #555;
 }
 
+/* Buttons */
 .otp-btn {
   padding: 12px 20px;
   font-size: 1rem;
@@ -55,6 +57,8 @@ h1{
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: auto;
+  max-width: 100%;
 }
 
 .otp-btn:disabled {
@@ -77,7 +81,7 @@ h1{
   }
 
   .otp-btn {
-    width: 100%;
+    width: 100%;       /* full width on tablets/mobiles */
     font-size: 1rem;
   }
 }
@@ -85,6 +89,8 @@ h1{
 @media (max-width: 480px) {
   .container {
     padding: 15px;
+    min-height: 100vh; /* ensure full height */
+    padding-bottom: env(safe-area-inset-bottom); /* safe area for mobile */
   }
 
   .otp-title {
@@ -102,5 +108,14 @@ h1{
   .otp-btn {
     padding: 10px;
     font-size: 0.9rem;
+    width: 100%;       /* button fits screen */
   }
+}
+
+/* Ensure body scrolls if needed */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
