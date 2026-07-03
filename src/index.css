@@ -88,7 +88,7 @@ h1{
 
 @media (max-width: 480px) {
   .container {
-    padding: 15px;
+    padding-left: 15px;
     min-height: 100vh; /* ensure full height */
     padding-bottom: env(safe-area-inset-bottom); /* safe area for mobile */
   }
