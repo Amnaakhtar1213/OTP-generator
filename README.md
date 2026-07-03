@@ -3,6 +3,7 @@
 One time password generator is simply built using **React**.In this project i practice useSate and useEffect.
 It is 6-digit password generator and manages its expiration with countdown.
 A little bit of **CSS** for better look.
+
 ---
 
 ## Feature 🚀
