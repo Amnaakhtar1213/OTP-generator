@@ -19,8 +19,8 @@ A little bit of **CSS** for better look.
 
 ## Technology ⚔️
 
-- **React** -> practice for useState and useEffect
-- **CSS**   -> for styling 
+- **React**
+- **CSS**    
 
 ---
 
